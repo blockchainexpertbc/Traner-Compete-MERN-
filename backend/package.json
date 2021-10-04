@@ -1,0 +1,54 @@
+{
+  "name": "api-js-mooc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.0",
+    "simple-thumbnail": "^1.6.5",
+    "socket.io": "^4.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "apidoc": {
+    "title": "Mooc API"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "docs": "apidoc -i ./app/routes -o ./docs",
+    "test": "eslint ./ && npm run docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundowndev/api-js-mooc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sundowndev/api-js-mooc/issues"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "homepage": "https://github.com/sundowndev/api-js-mooc#readme"
+}
